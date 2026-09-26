@@ -1,0 +1,21 @@
+{
+  "title": "PIXELDESTRUKT",
+  "titleFull": "pixeldestrukt",
+  "tagline": "Video, light and embedded systems for live performance.",
+  "description": "The technical workshop behind bl1t — custom software, LED and projection systems, and embedded hardware for live visuals.",
+  "url": "https://pixeldestrukt.com",
+  "author": "Dan Newcome",
+  "email": "hello@pixeldestrukt.com",
+  "lang": "en",
+  "postsPerPage": 20,
+  "nav": [
+    { "label": "Work", "href": "/work/" },
+    { "label": "Notes", "href": "/notes/" },
+    { "label": "About", "href": "/about/" }
+  ],
+  "links": [
+    { "label": "GitHub", "href": "https://github.com/dannewcome" },
+    { "label": "bl1t.com", "href": "https://bl1t.com", "note": "performance" },
+    { "label": "RSS", "href": "/feed.xml" }
+  ]
+}

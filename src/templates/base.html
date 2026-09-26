@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{pageTitle}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="{{ogType}}">
+<meta property="og:title" content="{{ogTitle}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:site_name" content="{{siteTitle}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08090b">
+<link rel="alternate" type="application/rss+xml" title="{{siteTitle}} — notes" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/main.css?v={{rev}}">
+</head>
+<body class="{{bodyClass}}">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">pixel<b>destrukt</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      {{nav}}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{content}}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-col">
+      <p class="foot-brand">pixel<b>destrukt</b></p>
+      <p class="muted">{{tagline}}</p>
+    </div>
+    <div class="foot-col">
+      <p class="foot-label">Elsewhere</p>
+      <ul class="plain">
+        {{footLinks}}
+      </ul>
+    </div>
+    <div class="foot-col">
+      <p class="foot-label">Contact</p>
+      <ul class="plain">
+        <li><a href="mailto:{{email}}">{{email}}</a></li>
+      </ul>
+      <p class="muted small">Performance work lives at <a href="https://bl1t.com">bl1t.com</a>.</p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span class="muted small">&copy; {{year}} {{author}}</span>
+    <span class="muted small mono">build {{rev}}</span>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js?v={{rev}}" defer></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow mono">Notes</p>
+    <h1>{{heading}}</h1>
+    <p class="lede">{{blurb}}</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="filters" data-filters hidden>
+      <button class="chip is-active" type="button" data-tag="">All</button>
+      {{tagChips}}
+    </div>
+    <ul class="post-list post-list-full plain" data-post-list>
+      {{posts}}
+    </ul>
+    <p class="empty" data-empty hidden>No notes with that tag yet.</p>
+  </div>
+</section>

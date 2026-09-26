@@ -1,0 +1,14 @@
+{
+  "name": "pixeldestrukt-com",
+  "private": true,
+  "type": "module",
+  "description": "pixeldestrukt.com — static site with a zero-dependency Markdown build",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "serve": "node build.mjs --serve"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
