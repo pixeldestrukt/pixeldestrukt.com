@@ -14,7 +14,7 @@
     { "label": "About", "href": "/about/" }
   ],
   "links": [
-    { "label": "GitHub", "href": "https://github.com/dannewcome" },
+    { "label": "GitHub", "href": "https://github.com/pixeldestrukt" },
     { "label": "bl1t.com", "href": "https://bl1t.com", "note": "performance" },
     { "label": "RSS", "href": "/feed.xml" }
   ]

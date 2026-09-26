@@ -57,20 +57,37 @@ and copy buttons on code blocks — both progressive enhancements.
 
 The output is a plain `dist/` directory; anything that serves static files works.
 
-- **Netlify** — `netlify.toml` is included and configured. Connect the repo and
-  it builds on push.
-- **Cloudflare Pages / Vercel** — build command `node build.mjs`, output
-  directory `dist`.
-- **GitHub Pages** — needs an Action that runs `node build.mjs` and publishes
-  `dist/`.
-- **Anywhere else** — `rsync -a --delete dist/ user@host:/var/www/pixeldestrukt/`
+**GitHub Pages** is wired up: `.github/workflows/deploy.yml` builds on every
+push to `main` and publishes `dist/`. One-time setup on the repo:
 
-Pretty URLs are directories with `index.html`, so no server rewrite rules are
-needed.
+1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
+2. **Settings → Pages → Custom domain:** `pixeldestrukt.com`, then tick
+   *Enforce HTTPS* once the certificate is issued (takes a few minutes).
+3. DNS at the registrar — apex `A` records to GitHub's four IPs, plus `www`:
+
+   ```
+   @    A      185.199.108.153
+   @    A      185.199.109.153
+   @    A      185.199.110.153
+   @    A      185.199.111.153
+   www  CNAME  pixeldestrukt.github.io.
+   ```
+
+`public/CNAME` is copied into `dist/` on every build, so the custom domain
+survives redeploys.
+
+Anywhere else works too — the output is a plain static directory:
+
+- **Cloudflare Pages / Vercel / Netlify** — build command `node build.mjs`,
+  output directory `dist`.
+- **A server** — `rsync -a --delete dist/ user@host:/var/www/pixeldestrukt/`
+
+Pretty URLs are directories with `index.html`, so no rewrite rules are needed.
 
 ## Before going live
 
-- `site.json` — the GitHub URL and `hello@pixeldestrukt.com` are placeholders.
+- `site.json` — `hello@pixeldestrukt.com` is a placeholder; point it at a real
+  mailbox.
 - `content/` — the three sample posts and three sample projects are scaffolding
   written to exercise the design. Replace them with real work.
 - Add an Open Graph image and reference it in `src/templates/base.html` (the
