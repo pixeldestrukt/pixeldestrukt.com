@@ -19,6 +19,10 @@ can show the same image, or tiles of one larger canvas, locked to the same
 frame. The whole show is one JSON file, and edits to it go live without a
 restart.
 
+**[Live demo](https://pixeldestrukt.github.io/vj-show/?canvas=16:9)**: runs in
+your browser. Open it in two windows with the same `?sync=<some-token>` and
+they play the same frame; add `&mode=control` to a third to drive them.
+
 ## Why it exists
 
 I had a gallery show built in TiXL, and nobody else could host it. Keeping it
