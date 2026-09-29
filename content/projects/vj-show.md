@@ -4,7 +4,7 @@ slug: vj-show
 summary: A browser player for running generative visuals unattended across several displays, frame-synced over WebRTC with no pixels on the wire.
 status: ongoing
 year: 2026
-order: 0
+order: 1
 featured: true
 stack: [WebGL2, GLSL, WebRTC, JavaScript]
 repo: https://github.com/pixeldestrukt/vj-show

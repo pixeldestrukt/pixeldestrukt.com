@@ -88,7 +88,5 @@ Pretty URLs are directories with `index.html`, so no rewrite rules are needed.
 
 - `site.json` — `hello@pixeldestrukt.com` is a placeholder; point it at a real
   mailbox.
-- `content/` — the three sample posts and three sample projects are scaffolding
-  written to exercise the design. Replace them with real work.
 - Add an Open Graph image and reference it in `src/templates/base.html` (the
   `twitter:card` meta is already `summary_large_image`).

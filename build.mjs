@@ -190,7 +190,7 @@ function buildHome(posts, projects) {
   const featured = projects.filter((p) => p.featured);
   const content = fill(tpl('home.html'), {
     intro,
-    featuredWork: (featured.length ? featured : projects).slice(0, 4).map(projectCard).join('\n'),
+    featuredWork: (featured.length ? featured : projects).slice(0, 6).map(projectCard).join('\n'),
     recentPosts: posts.slice(0, 5).map((p) => postCard(p)).join('\n'),
   });
 

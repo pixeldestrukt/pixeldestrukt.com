@@ -202,7 +202,7 @@ p { margin: 0 0 1.1em; }
 /* -------------------------------------------------------------------- hero */
 
 .hero {
-  padding: clamp(56px, 11vw, 120px) 0 clamp(40px, 7vw, 76px);
+  padding: clamp(44px, 8vw, 84px) 0 clamp(32px, 5vw, 56px);
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
@@ -490,9 +490,9 @@ p { margin: 0 0 1.1em; }
   border-radius: var(--radius);
   overflow: hidden;
 }
-.spec { background: var(--bg); padding: 12px 14px; }
+.spec { background: var(--bg); padding: 12px 14px; min-width: 0; }
 .spec dt { color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
-.spec dd { margin: 0; font-size: 0.9rem; color: var(--text); }
+.spec dd { margin: 0; font-size: 0.9rem; color: var(--text); overflow-wrap: anywhere; }
 
 .post-body { padding-block: clamp(32px, 5vw, 54px); }
 

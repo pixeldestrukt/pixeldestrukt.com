@@ -1,7 +1,7 @@
 # Content
 
-Everything on the site is Markdown in this directory. Sample entries ship as
-scaffolding — replace them with real work.
+Everything on the site is Markdown in this directory. Each project page
+corresponds to a repo in the pixeldestrukt GitHub org.
 
 ## Adding a note
 

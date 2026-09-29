@@ -1,7 +1,7 @@
 ---
 title: About
 eyebrow: About
-summary: Who builds this, and what for.
+summary: What this is and what gets built here.
 ---
 
 I design and build the technical layer of live visual work: the renderers, the
@@ -36,11 +36,7 @@ Firmware for controllers, sensors and drivers — ESP32, RP2040, Teensy, bare
 STM32 — with the timing discipline that DMX and addressable LED protocols
 demand. Devices that boot into showtime rather than into a setup wizard.
 
-## Working together
+## Contact
 
-I take on technical direction, custom tool development, and system design for
-installations and touring productions. If you have a surface, a signal chain or
-a control problem that does not fit off-the-shelf gear, that is the interesting
-case.
-
-Reach me at [hello@pixeldestrukt.com](mailto:hello@pixeldestrukt.com).
+Questions, bug reports, or notes on anything here:
+[hello@pixeldestrukt.com](mailto:hello@pixeldestrukt.com).
